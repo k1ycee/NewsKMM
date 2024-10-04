@@ -34,6 +34,7 @@ kotlin {
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
+//            implementation("io.ktor:ktor-client-android:2.3.12")
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -49,7 +50,13 @@ kotlin {
             implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
             implementation("io.ktor:ktor-client-content-negotiation:2.3.12")
             implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.12")
+            api("dev.icerock.moko:mvvm-core:0.16.1")
+            api("dev.icerock.moko:mvvm-compose:0.16.1")
         }
+
+//        iosMain.dependencies {
+//            implementation("io.ktor:ktor-client-darwin:2.3.12")
+//        }
     }
 }
 
